@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+html {
+    height: 100%;
+}
+
 /* Visibility Control */
 .hidden {
     display: none !important;
@@ -113,15 +117,26 @@ body {
     color: #ffffff;
     min-height: 100vh;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 #app {
     width: 100%;
     max-width: 900px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 40px);
 }
 
-/* Header */
+main {
+    flex: 1;
+}
+
+body > footer {
+    margin-top: auto;
+}
 header {
     text-align: center;
     margin-bottom: 40px;
@@ -468,6 +483,23 @@ button.delete-session:hover {
     box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
 }
 
+/* Footer */
+.copyright {
+    margin-top: 60px;
+    padding: 24px 20px;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(10px);
+}
+
+.copyright p {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.5);
+    letter-spacing: 0.5px;
+    margin: 0;
+}
+
 /* Animations */
 @keyframes fadeInDown {
     from {
@@ -705,5 +737,28 @@ button.delete-session:hover {
 
     .timer {
         font-size: 0.85rem;
+    }
+}
+
+/* Footer Responsive */
+@media (max-width: 768px) {
+    .copyright {
+        margin-top: 40px;
+        padding: 18px 16px;
+    }
+
+    .copyright p {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .copyright {
+        margin-top: 30px;
+        padding: 16px 12px;
+    }
+
+    .copyright p {
+        font-size: 0.75rem;
     }
 }
