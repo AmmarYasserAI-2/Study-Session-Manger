@@ -3,7 +3,7 @@ const GREETINGS = [
     (name) => `Sba7/Msa2 el 5eer ya ${name}!!`,
     (name) => `Hey, ${name}!!`,
     (name) => `Welcome ya...${name}!!`,
-    (name) => `Hello, ${name}`,
+    (name) => `Hello ya ${name}`,
     (name) => `Guten Tag ya ${name}`
 ];
 
