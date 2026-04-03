@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Name Input Screen -->
+    <div id="name-input-screen" class="name-input-screen">
+        <div class="name-input-container">
+            <div class="name-input-content">
+                <h2>Welcome to Your Study Session Manger</h2>
+                <p>What's your name? [In English]</p>
+                <input type="text" id="name-input" class="name-input-field" placeholder="Enter your name..." autocomplete="off">
+                <button id="name-submit-btn" class="name-submit-btn">Continue</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Dashboard -->
+    <div id="app" class="hidden">
+        <header>
+            <h1 id="greeting">Hello</h1>
+        </header>
+        <main>
+            <div id="sessions-container">
+                <!-- Sessions will be dynamically added here -->
+            </div>
+            <div id="controls">
+                <button id="add-session">➕ Add New Session</button>
+                <button id="change-name-btn" class="change-name-btn">👤 Change Name</button>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
